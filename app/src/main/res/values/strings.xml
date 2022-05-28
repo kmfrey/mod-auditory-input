@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Z. Frey Thesis</string>
+    <string name="title_home">Connections</string>
+    <string name="title_inclass">In-Class</string>
+    <string name="title_settings">Settings</string>
+    <string name="permission_denied">Bluetooth must be enabled to utilize application.</string>
+    <string name="bt_enabled">Bluetooth ENABLED</string>
+    <string name="bt_disabled">Bluetooth DISABLED</string>
+    <string name="connect_output">Connect Headphones</string>
+    <string name="connect_input">Connect Microphone Device</string>
+    <string name="disconnect_input">Disconnect Microphone Device</string>
+    <string name="disconnect_output">Disconnect Headphones</string>
+    <string name="home_instructions">Select bluetooth devices for microphone and speaker use. </string>
+    <string name="background_choice">Choose Background Audio.</string>
+    <string name="white_noise">Rain Noise</string>
+    <string name="classical">Canon in D (Classical)</string>
+    <string name="piano">Piano Music</string>
+    <string name="no_audio">No Audio</string>
+    <string name="lecture_volume">Adjust Lecture Volume</string>
+    <string name="background_volume">Adjust Background Audio Volume</string>
+    <string name="no_devices">No devices were found. Please turn on bluetooth devices and try again.</string>
+    <string name="uncertain_device">Not known if this is input or output device.</string>
+    <string name="naming_pattern">Please place devices in pairing mode.</string>
+    <string name="devices">Connected devices:</string>
+    <string name="play_lecture">Press to start listening to the lecture.</string>
+    <string name="service_name">Companion Device Service</string>
+
+</resources>
