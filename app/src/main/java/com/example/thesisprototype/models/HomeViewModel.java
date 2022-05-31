@@ -1,16 +1,16 @@
-package com.example.thesisprototype.ui.inclass;
+package com.example.thesisprototype.fragments.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class InClassViewModel extends ViewModel {
+public class HomeViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public InClassViewModel() {
+    public HomeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is the in-class fragment");
+        mText.setValue("This is the connections fragment");
     }
 
     public LiveData<String> getText() {

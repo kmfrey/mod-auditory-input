@@ -1,0 +1,16 @@
+//
+// Created by kmfre on 29-May-22.
+//
+
+#ifndef THESISPROTOTYPE_LIVEEFFECTENGINE_H
+#define THESISPROTOTYPE_LIVEEFFECTENGINE_H
+
+
+
+class LiveEffectEngine {
+
+};
+
+
+
+#endif //THESISPROTOTYPE_LIVEEFFECTENGINE_H
