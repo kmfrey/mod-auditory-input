@@ -1,4 +1,3 @@
-
 # For more information about using CMake with Android Studio, read the
 # documentation: https://d.android.com/studio/projects/add-native-code.html
 
@@ -27,19 +26,28 @@ find_library( # Sets the name of the path variable.
 
               # Specifies the name of the NDK library that
               # you want CMake to locate.
-              log )
+              log)
 
-find_package(oboe REQUIRED CONFIG)
+find_package(../../../../../../../.gradle/caches/transforms-3/6a035c85ab1bd7e2cef4da6b32e81280/transformed/jetified-oboe-1.6.1/prefab/modules/oboe/include/oboe REQUIRED CONFIG)
 
+add_library(thesisprototype
+        SHARED
+        LiveEffectEngine.cpp
+        FullDuplexStream.cpp
+        jni_bridge.cpp
+        ../logging/trace.cpp)
+
+target_include_directories(thesisprototype
+        PRIVATE
+        ../logging)
 # Specifies libraries CMake should link to your target library. You
 # can link multiple libraries, such as libraries you define in this
 # build script, prebuilt third-party libraries, or system libraries.
 
 target_link_libraries( # Specifies the target library.
                        thesisprototype
-
-                       # oboe library target
+        PRIVATE
         oboe::oboe
-                       # Links the target library to the log library
-                       # included in the NDK.
-                       ${log-lib} )
+        android
+        atomic
+        ${log-lib} )

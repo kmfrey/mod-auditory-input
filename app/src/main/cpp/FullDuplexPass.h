@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-#ifndef SAMPLES_FULLDUPLEXPASS_H
-#define SAMPLES_FULLDUPLEXPASS_H
+#ifndef OBOE_FULLDUPLEXPASS_H
+#define OBOE_FULLDUPLEXPASS_H
 
 #include "FullDuplexStream.h"
 
@@ -55,4 +55,4 @@ public:
         return oboe::DataCallbackResult::Continue;
     }
 };
-#endif //SAMPLES_FULLDUPLEXPASS_H
+#endif //OBOE_FULLDUPLEXPASS_H
