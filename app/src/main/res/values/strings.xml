@@ -10,7 +10,7 @@
     <string name="connect_input">Connect Microphone Device</string>
     <string name="disconnect_input">Disconnect Microphone Device</string>
     <string name="disconnect_output">Disconnect Headphones</string>
-    <string name="home_instructions">Select bluetooth devices for microphone and speaker use. </string>
+    <string name="home_instructions">Select bluetooth device for microphone use. Connect headphone via USB or wire. </string>
     <string name="background_choice">Choose Background Audio.</string>
     <string name="white_noise">Rain Noise</string>
     <string name="classical">Canon in D (Classical)</string>
@@ -20,9 +20,17 @@
     <string name="background_volume">Adjust Background Audio Volume</string>
     <string name="no_devices">No devices were found. Please turn on bluetooth devices and try again.</string>
     <string name="uncertain_device">Not known if this is input or output device.</string>
-    <string name="naming_pattern">Please place devices in pairing mode.</string>
-    <string name="devices">Connected devices:</string>
+    <string name="naming_pattern">Please place device in pairing mode if not previously connected.</string>
+    <string name="devices">Connected device:</string>
     <string name="play_lecture">Press to start listening to the lecture.</string>
     <string name="service_name">Companion Device Service</string>
+    <string name="play_description">Play button to start listening to the lecture</string>
+    <string name="input_alert_title">Assign Connected Device as Input</string>
+    <string name="output_alert_title">Assign Connected Device as Output</string>
+    <string name="bonded">Bonded</string>
+    <string name="connected">Connected</string>
+    <string name="updating">Updating Status</string>
+    <string name="unknown">Failed or Unknown</string>
+    <string name="failed">Failed to connect or bond.</string>
 
 </resources>

@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.thesisprototype.ui.home.HomeFragment"
+        android:name="com.example.thesisprototype.fragments.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_inclass"
-        android:name="com.example.thesisprototype.ui.inclass.InClassFragment"
+        android:name="com.example.thesisprototype.fragments.InClassFragment"
         android:label="@string/title_inclass"
         tools:layout="@layout/fragment_inclass" />
 </navigation>

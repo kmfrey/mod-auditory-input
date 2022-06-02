@@ -1,4 +1,4 @@
-package com.example.thesisprototype;
+package com.example.thesisprototype.utils;
 /*
  * Copyright 2018 The Android Open Source Project
  *
@@ -28,16 +28,16 @@ public enum LiveEffectEngine {
     }
 
     // Native methods
-    static native boolean create();
-    static native boolean isAAudioRecommended();
-    static native boolean setAPI(int apiType);
-    static native boolean setEffectOn(boolean isEffectOn);
-    static native void setRecordingDeviceId(int deviceId);
-    static native void setPlaybackDeviceId(int deviceId);
-    static native void delete();
+    public static native boolean create();
+    public static native boolean isAAudioRecommended();
+    public static native boolean setAPI(int apiType);
+    public static native boolean setEffectOn(boolean isEffectOn);
+    public static native void setRecordingDeviceId(int deviceId);
+    public static native void setPlaybackDeviceId(int deviceId);
+    public static native void delete();
     static native void native_setDefaultStreamValues(int defaultSampleRate, int defaultFramesPerBurst);
 
-    static void setDefaultStreamValues(Context context) {
+    public static void setDefaultStreamValues(Context context) {
         AudioManager myAudioMgr = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
         String sampleRateStr = myAudioMgr.getProperty(AudioManager.PROPERTY_OUTPUT_SAMPLE_RATE);
         int defaultSampleRate = Integer.parseInt(sampleRateStr);

@@ -1,9 +1,11 @@
-package com.example.thesisprototype;
+package com.example.thesisprototype.models;
 
 import android.bluetooth.BluetoothDevice;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
+
+import com.example.thesisprototype.utils.SharedData;
 
 import java.util.List;
 
@@ -11,25 +13,34 @@ public class MainViewModel extends ViewModel {
 
     private MutableLiveData<BluetoothDevice> mInput;
     private MutableLiveData<BluetoothDevice> mOutput;
-    private MutableLiveData<Boolean> mInputBond;
-    private MutableLiveData<Boolean> mOutputBond;
+    private MutableLiveData<Integer> mConnectionStatusInput;
+    private MutableLiveData<Integer> mConnectionStatusOutput;
 
-    public MutableLiveData<BluetoothDevice> getInput() {
+    public MutableLiveData<BluetoothDevice> getDevice(Integer id) {
+        if (id.equals(SharedData.INPUT_IDENTIFIER)) return getInput();
+        else return getOutput();
+    }
+    private MutableLiveData<BluetoothDevice> getInput() {
         if (mInput == null) mInput = new MutableLiveData<>();
         return mInput;
     }
-    public MutableLiveData<BluetoothDevice> getOutput() {
+    private MutableLiveData<BluetoothDevice> getOutput() {
         if (mOutput == null) mOutput = new MutableLiveData<>();
         return mOutput;
     }
 
-    public MutableLiveData<Boolean> getInputBond() {
-        if (mInputBond == null) mInputBond = new MutableLiveData<>();
-        return mInputBond;
+    public MutableLiveData<Integer> getConnectionStatus(Integer id) {
+        if (id.equals(SharedData.INPUT_IDENTIFIER)) return getConnectionStatusInput();
+        else return getConnectionStatusOutput();
     }
 
-    public MutableLiveData<Boolean> getOutputBond() {
-        if (mOutputBond == null) mOutputBond = new MutableLiveData<>();
-        return mOutputBond;
+    private MutableLiveData<Integer> getConnectionStatusInput() {
+        if (mConnectionStatusInput == null) mConnectionStatusInput = new MutableLiveData<>();
+        return mConnectionStatusInput;
+    }
+
+    private MutableLiveData<Integer> getConnectionStatusOutput() {
+        if (mConnectionStatusOutput == null) mConnectionStatusOutput = new MutableLiveData<>();
+        return mConnectionStatusOutput;
     }
 }

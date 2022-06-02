@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.inclass.InClassFragment">
+    tools:context=".fragments.InClassFragment">
 
     <TextView
         android:id="@+id/text_dashboard"
@@ -57,21 +57,9 @@
             android:id="@+id/noAudio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:checked="true"
             android:text="@string/no_audio" />
     </RadioGroup>
-
-    <TextView
-        android:id="@+id/lectureLabel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="@string/lecture_volume"
-        android:labelFor="@id/lectureVolume"/>
-    <SeekBar
-        android:id="@+id/lectureVolume"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp" />
 
     <TextView
         android:id="@+id/playLabel"
@@ -87,7 +75,8 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         android:layout_marginStart="20dp"
-        android:src="@android:drawable/ic_media_play" />
+        android:src="@drawable/ic_play"
+        android:contentDescription="@string/play_description" />
 
     <TextView
         android:id="@+id/backgroundLabel"

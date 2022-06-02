@@ -1,4 +1,4 @@
-package com.example.thesisprototype.fragments.home;
+package com.example.thesisprototype.models;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

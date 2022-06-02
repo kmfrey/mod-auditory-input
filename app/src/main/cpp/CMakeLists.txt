@@ -28,18 +28,18 @@ find_library( # Sets the name of the path variable.
               # you want CMake to locate.
               log)
 
-find_package(../../../../../../../.gradle/caches/transforms-3/6a035c85ab1bd7e2cef4da6b32e81280/transformed/jetified-oboe-1.6.1/prefab/modules/oboe/include/oboe REQUIRED CONFIG)
+find_package(oboe REQUIRED CONFIG)
 
 add_library(thesisprototype
         SHARED
         LiveEffectEngine.cpp
         FullDuplexStream.cpp
         jni_bridge.cpp
-        ../logging/trace.cpp)
+        ./logging/trace.cpp)
 
 target_include_directories(thesisprototype
         PRIVATE
-        ../logging)
+        ./logging)
 # Specifies libraries CMake should link to your target library. You
 # can link multiple libraries, such as libraries you define in this
 # build script, prebuilt third-party libraries, or system libraries.
